@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>photographer</title>
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Montserrat:wght@400;700&family=Press+Start+2P&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a lang="en" href="./index.html" class="logo nav__logo link">
+            <img
+              src="./imeges/lazarenko.png"
+              alt="Анна Лазаренко"
+              width="100"
+            />
+          </a>
+
+          <ul class="menu list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link link current">Головна</a>
+            </li>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link link">Галерея</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list contact">
+          <li class="contact__item">
+            <a
+              href="mailto:lazarenko.ania.sg@gmail.com"
+              class="contact__our contact__our-top link"
+            >
+              <svg class="contact__icon" width="16" height="12">
+                <use href="./imeges/icons.svg#icon-envelope"></use>
+              </svg>
+              lazarenko.ania.sg@gmail.com</a
+            >
+          </li>
+          <li class="contact__item">
+            <a
+              href="tel:+380967419449"
+              class="contact__our contact__our-bottom link"
+            >
+              <svg class="contact__icon" width="10" height="16">
+                <use href="./imeges/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 741 94 49</a
+            >
+          </li>
+        </ul>
+
+        <button type="button" class="menu-open-btn">
+          <svg
+            class="mobil__icon"
+            width="40"
+            height="40"
+            aria-label="переключатель мобильног меню"
+          >
+            <use
+              href="./imeges/icons.svg#icon-mob-open"
+              class="mobil__icon-open"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="mobil is-hidden">
+          <div class="mobil-container">
+            <nav class="mobil-nav">
+              <button type="button" class="mobil__button">
+                <svg
+                  class="mobil__icon"
+                  width="40"
+                  height="40"
+                  aria-label="переключатель мобильног меню"
+                >
+                  <use
+                    href="./imeges/icons.svg#icon-mob-close"
+                    class="mobil__icon-close"
+                  ></use>
+                </svg>
+              </button>
+              <ul class="mob-menu list">
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="mob-menu__link link current"
+                    >Головна</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link link"
+                    >Галерея</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="" class="mob-menu__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div>
+              <div class="mob-menu_bottom">
+                <ul class="list mob-contact">
+                  <li class="mob-contact__item">
+                    <a
+                      href="tel:+380967419449"
+                      class="mob-contact__our tel link"
+                    >
+                      +38 096 741 94 49</a
+                    >
+                  </li>
+                  <li class="mob-contact__item">
+                    <a
+                      href="mailto:lazarenko.ania.sg@gmail.com"
+                      class="mob-contact__our mail link"
+                    >
+                      lazarenko.ania.sg@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <ul class="social-networks list">
+                <li class="social-networks__item">
+                  <a href="" class="social-networks__link link">Instagram</a>
+                </li>
+                <li class="social-networks__item">
+                  <a href="" class="social-networks__link link">Twitter</a>
+                </li>
+                <li class="social-networks__item">
+                  <a href="" class="social-networks__link link">Facebook</a>
+                </li>
+                <li class="social-networks__item">
+                  <a href="" class="social-networks__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Лови момент</h1>
+          <button data-modal-open type="button" class="hero-button button">
+            Замовити послугу
+          </button>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2 class="about-title">Трохи про себе</h2>
+          <p class="about-text">
+            Мене звати Аня і я хочу стати вашим сімейним фотографом. Я не
+            представляю себе без камери, я обожнюю ловити справжні щирі почуття
+            та зберігати їх на світлині. Я отримую неймовірне задоволення від
+            спілкування з дітками під час зйомки. Дітей фотографувати одночасно
+            і найлегше, бо в них завжди справжні емоції але і найважче, бо
+            зловити в якісному знимку маленьке шило не так і легко. Так діти, то
+            моє захоплення. Але і дорослих я не залишу без уваги, не хвилюйтеся.
+          </p>
+        </div>
+      </section>
+
+      <section class="we-doing">
+        <div class="container">
+          <h2 class="we-doing-title title">Що я роблю</h2>
+          <ul class="list we-doing-list">
+            <li class="we-doing-item">
+              <img src="./imeges/children.jpg" alt="дитина" width="370" />
+              <p class="we-doing-img-title">Дитяча фотографія</p>
+            </li>
+            <li class="we-doing-item">
+              <img src="./imeges/femily.jpg" alt="сім'я" width="370" />
+              <p class="we-doing-img-title">Сімейна зйомка</p>
+            </li>
+            <li class="we-doing-item">
+              <img src="./imeges/love-story.jpg" alt="закохані" width="370" />
+              <p class="we-doing-img-title" lang="en">love story</p>
+            </li>
+            <li class="we-doing-item">
+              <img src="./imeges/clas.jpg" alt="однокласники" width="370" />
+              <p class="we-doing-img-title">шкільна фотосесія</p>
+            </li>
+            <li class="we-doing-item">
+              <img
+                src="./imeges/christening.jpg"
+                alt="хрещення дитини"
+                width="370"
+              />
+              <p class="we-doing-img-title">Хрестини</p>
+            </li>
+            <li class="we-doing-item">
+              <img src="./imeges/albom.jpg" alt="фото-альбоми" width="370" />
+              <p class="we-doing-img-title">фото-альбоми</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="address-join">
+          <div class="logo-address">
+            <div class="logo-address-footer">
+              <a lang="en" href="./index.html" class="logo footer__logo link">
+                <img
+                  src="./imeges/lazarenko.png"
+                  alt="Анна Лазаренко"
+                  width="100"
+                />
+              </a>
+            </div>
+            <address class="footer-address">
+              <ul class="list">
+                <li class="footer-address-city">м. Львів</li>
+                <li class="footer-item">
+                  <a
+                    href="mailto:lazarenko.ania.sg@gmail.com"
+                    class="link footer-address-contact"
+                    >lazarenko.ania.sg@gmail.com</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a
+                    href="tel:+380967419449"
+                    class="link footer-address-contact"
+                    >+38 096 741 94 49</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-join">
+            <p class="footer-join-title">присоединяйтесь</p>
+            <ul class="join-list list">
+              <li class="join-item">
+                <a href="" class="join-link link">
+                  <svg class="join-icon" width="20" height="20">
+                    <use href="./imeges/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-item">
+                <a href="" class="join-link link">
+                  <svg class="join-icon" width="20" height="20">
+                    <use href="./imeges/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-item">
+                <a href="" class="join-link link">
+                  <svg class="join-icon" width="20" height="20">
+                    <use href="./imeges/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="masters-soc-item">
+                <a href="" class="join-link link">
+                  <svg class="join-icon" width="20" height="20">
+                    <use href="./imeges/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe-title">Подпишитесь на рассылку</p>
+          <form class="subscribe-form">
+            <label class="subscribe-label">
+              <input
+                type="email"
+                class="subscribe-email-input"
+                name="e-mail"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+
+            <button type="submit" class="button subscribe-button">
+              Подписаться
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./imeges/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
