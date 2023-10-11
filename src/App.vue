@@ -27,11 +27,11 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600&family=Playfair+Display:ital,wght@0,600;1,600&family=Raleway:ital,wght@0,100;0,200;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif, Arial, sans-serif;
+  font-family: "Oswald", sans-serif, Arial, sans-serif;
 }
 #app {
   -webkit-font-smoothing: antialiased;
@@ -41,7 +41,10 @@ export default {
   color: black;
   margin-bottom: 60px;
 }
-
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 </style>
 
 <!-- прописний шрифт -->

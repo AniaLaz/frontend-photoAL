@@ -47,7 +47,7 @@ export default {};
   content: "";
   display: block;
   height: 5px;
-  background: black;
+  background: teal;
   position: absolute;
   top: -0.5em;
   left: 0;

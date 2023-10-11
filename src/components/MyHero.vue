@@ -58,14 +58,11 @@ export default {
 
 <style scoped>
 .hero {
-
   padding-top: 30px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5px;
   background-image: url("../imeges/heroyLviv2.svg");
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -74,9 +71,13 @@ export default {
   z-index: 999;
 }
 .hero__title {
+  font-family: "Raleway", sans-serif;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 900;
   font-size: 35px;
   line-height: 1.62;
@@ -89,6 +90,7 @@ export default {
 @media screen and (min-width: 768px) {
   .hero__title {
     font-size: 40px;
+    font-size: 60px;
   }
 }
 .hero__button {

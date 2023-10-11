@@ -98,6 +98,7 @@ h2 {
   }
 }
 .about__name {
+   font-family: 'Raleway', sans-serif;
   padding: 0 15px;
 }
 @media screen and (min-width: 768px) {
