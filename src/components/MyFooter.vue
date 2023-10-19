@@ -1,12 +1,6 @@
 <template>
   <footer class="footer">
-    <img
-      class="logo"
-      src="../imeges/logoAL.png"
-      width="100"
-      alt="Ania Lazarenko"
-      @click="$router.push('/')"
-    />
+    <p class="footer__logo">Анна Лазаренко</p>
     <div class="footer__info">
       <ul class="footer__list">
         <li class="footer__city">м. Львів</li>
@@ -24,19 +18,23 @@
         </li>
       </ul>
 
-      <OrderAService class="footer__form">
-      <f4>Маєте питання?</f4>
-      </OrderAService>
-
       <div class="add">
-        <p>Приєднуйтесь</p>
         <a
           target="_blank"
           href="https://www.facebook.com/ania.kryghevych"
           class="add-link f"
         >
           <svg class="add-icon" width="20" height="20">
-            <use href="../imeges/icons.svg#icon-facebook"></use>
+            <use href="../imeges/icons.svg#test-face"></use>
+          </svg>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/ania_kr5/"
+          class="add-link f"
+        >
+          <svg class="add-icon" width="20" height="20">
+            <use href="../imeges/icons.svg#test-ins"></use>
           </svg>
         </a>
         <a
@@ -45,7 +43,7 @@
           class="add-link i"
         >
           <svg class="add-icon" width="20" height="20">
-            <use href="../imeges/icons.svg#icon-instagram"></use>
+            <use href="../imeges/icons.svg#test-linc"></use>
           </svg>
         </a>
       </div>
@@ -54,31 +52,35 @@
 </template>
 
 <script>
-import OrderAService from "@/components/OrderAService.vue";
 export default {
   data() {
     return {};
-  },
-  components: {
-    OrderAService,
   },
 };
 </script>
 
 <style scoped>
 .footer {
-  padding: 15px;
+  padding: 43px 102px 43px 54px;
   min-height: 100px;
   background: black;
   display: flex;
   align-items: center;
-
-  max-width: 1200px;
+  border-top: 1px solid white;
+}
+.footer__logo {
+  display: inline;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 48px;
+  white-space: nowrap;
 }
 .footer__info {
   display: block;
-  padding-left: 30px;
+  padding-left: 200px;
   font-size: 12px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -101,12 +103,14 @@ export default {
 }
 .add-link {
   display: inline-flex;
+  width: 51px;
+  height: 51px;
+  border-radius: 10%;
+  background-color: transparent;
 
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
-  padding: 7px;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: gray;
@@ -125,12 +129,16 @@ export default {
   margin-right: 10px;
 }
 .add {
-  margin-left: auto;
+  display: flex;
   color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 .add-icon {
   fill: white;
+  width: 100%;
+  height: 100%;
 }
 .footer__city {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -152,16 +160,4 @@ export default {
 .footer__contact:focus {
   color: white;
 }
-.footer__form{
-  width: 50vw;
-  background-color: black;
-  color: white;
-}
-@media screen and (min-width: 768px){
-.footer__form{
-margin:0 20px;
-width: 20vw;
-}
-}
-
 </style>

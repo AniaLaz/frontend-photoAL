@@ -8,7 +8,9 @@
           alt="дитина"
           width="371"
         />
-        <p class="doing__img__title">Дитяча фотографія</p>
+        <p class="doing__img__title">
+          <span class="doing__title__span">Дитяча фотографія</span>
+        </p>
       </li>
       <li class="doing__item">
         <img
@@ -17,7 +19,9 @@
           alt="сім'я"
           width="371"
         />
-        <p class="doing__img__title">Сімейна зйомка</p>
+        <p class="doing__img__title">
+          <span class="doing__title__span">Сімейна зйомка</span>
+        </p>
       </li>
       <li class="doing__item">
         <img
@@ -26,7 +30,9 @@
           alt="закохані"
           width="371"
         />
-        <p class="doing__img__title" lang="en">love story</p>
+        <p class="doing__img__title" lang="en">
+          <span class="doing__title__span">love story</span>
+        </p>
       </li>
       <li class="doing__item">
         <img
@@ -35,7 +41,9 @@
           alt="однокласники"
           width="371"
         />
-        <p class="doing__img__title">шкільна фотосесія</p>
+        <p class="doing__img__title">
+          <span class="doing__title__span">Шкільна фотосесія</span>
+        </p>
       </li>
       <li class="doing__item">
         <img
@@ -44,7 +52,9 @@
           alt="хрещення дитини"
           width="371"
         />
-        <p class="doing__img__title">Хрестини</p>
+        <p class="doing__img__title">
+          <span class="doing__title__span">Хрестини</span>
+        </p>
       </li>
       <li class="doing__item">
         <img
@@ -53,7 +63,9 @@
           alt="фото-альбоми"
           width="371"
         />
-        <p class="doing__img__title">фото-альбоми</p>
+        <p class="doing__img__title">
+          <span class="doing__title__span">Фотоальбоми</span>
+        </p>
       </li>
     </ul>
   </div>
@@ -79,13 +91,6 @@ ul {
     display: flex;
     margin-top: 20px;
     flex-wrap: wrap;
-    gap: 20px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .doing__list {
-    gap: 30px;
   }
 }
 
@@ -100,38 +105,35 @@ ul {
 @media screen and (min-width: 768px) {
   .doing__item {
     position: relative;
-    width: calc((100% - 40px) / 2);
+    width: calc(100% / 2);
+    margin-bottom: 78px;
   }
 }
 @media screen and (min-width: 1200px) {
   .doing__item {
+    display: block;
     position: relative;
-    width: calc((100% - 60px) / 3);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-.doing__item:hover {
-  transform: translate(1px, 2%);
-}
-
 .doing__img__title {
   position: absolute;
-  bottom: -11px;
+  bottom: -16px;
   display: flex;
-  font-style: normal;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-align: left;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  width: calc(100% - 57px);
   border: 0;
   color: white;
-  background: rgb(0, 128, 128, 0.3);
-
-  font-weight: 700;
-  font-size: 14px;
-  height: 70px;
+  background: rgba(60, 149, 143, 0.8);
+  height: 164px;
+  padding: 34px 0 34px 0;
+  padding-left: 57px;
+}
+.doing__title__span {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  width: 300px;
 }
 </style>

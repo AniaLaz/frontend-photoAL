@@ -27,12 +27,14 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600&family=Playfair+Display:ital,wght@0,600;1,600&family=Raleway:ital,wght@0,100;0,200;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600&family=Playfair+Display:ital,wght@0,600;1,600&family=Raleway:ital,wght@0,100;0,200;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif, Arial, sans-serif;
+  font-size: 20px;
+  font-family: "Roboto Regular", sans-serif;
 }
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

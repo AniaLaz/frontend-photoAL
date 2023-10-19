@@ -12,7 +12,21 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+  .container {
+  max-width: 786px;
+  margin: 0 auto;
+}
+}
+
+@media screen and (min-width: 1440px){
+  .container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 }
 </style>

@@ -4,8 +4,10 @@
     <BoxContainer>
       <div class="about">
         <div>
-          <h2 class="about__name">Анна</h2>
-          <h2 class="about__name">Лазаренко</h2>
+          <h2 class="about__name">
+            Анна <br />
+            Лазаренко
+          </h2>
           <div class="about__info">
             <p class="about__info__fiorst">Фотограф</p>
             <p class="about__info__second">Львів</p>
@@ -31,11 +33,17 @@
         <h2 class="about__what_do_titel">Портфоліо</h2>
         <WhatIDo />
       </div>
+      <div class="form__container">
+        <OrderAService class="footer__form">
+          <f4 class="form__title">Маєте питання?</f4>
+        </OrderAService>
+      </div>
     </BoxContainer>
   </div>
 </template>
 
 <script>
+import OrderAService from "@/components/OrderAService.vue";
 import MyHero from "@/components/MyHero";
 import WhatIDo from "@/components/WhatIDo.vue";
 import BoxContainer from "@/components/shared/BoxContainer";
@@ -43,6 +51,8 @@ export default {
   name: "my-main",
   components: {
     BoxContainer,
+    OrderAService,
+
     MyHero,
     WhatIDo,
   },
@@ -73,9 +83,11 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .about__text {
-    font-size: 15px;
-    margin: 0 20px 0 0;
-    padding-left: 15px;
+    font-size: 24px;
+    margin: 34px 0 0 0;
+    padding-left: 114px;
+    padding-right: 85px;
+    padding-bottom: 20px;
   }
 }
 .about {
@@ -87,33 +99,42 @@ h2 {
   border: 0;
 }
 .about__title {
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   text-align: left;
   padding: 0 15px;
   margin-top: 20px;
+  font-weight: bold;
 }
 @media screen and (min-width: 768px) {
   .about__title {
-    font-size: 35px;
+    font-size: 64px;
+    margin-top: 168px;
+    padding-left: 114px;
   }
 }
 .about__name {
-   font-family: 'Raleway', sans-serif;
-  padding: 0 15px;
+  font-family: "Raleway", sans-serif;
+  padding-left: 114px;
+  font-weight: lighter;
+  line-height: 1.04;
 }
 @media screen and (min-width: 768px) {
   .about__name {
-   font-size: 35px;
-}
+    font-size: 96px;
+    padding-top: 73px;
+  }
 }
 .about__info {
-  padding: 0 15px;
+  padding: 0 114px;
   display: flex;
   font-size: 15px;
   color: black;
   font-size: 11px;
   margin-top: 10px;
+  font-weight: bold;
 }
+
 @media screen and (min-width: 768px) {
   .about__info {
     font-size: 20px;
@@ -126,7 +147,6 @@ h2 {
 }
 .about__info__second {
   padding-left: 20px;
-
   margin: 0;
 }
 
@@ -136,15 +156,38 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .about__portret {
-    width: 400px;
+    width: 635px;
   }
 }
 .about__what_do {
-  padding: 20px 0 0 0;
+  padding: 106px 0 0 0px;
   background: black;
 }
 .about__what_do_titel {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  text-align: left;
   color: white;
   margin-bottom: 20px;
+  padding-left: 110px;
+  margin-bottom: 57px;
+}
+.footer__form {
+  width: 50%;
+  background-color: black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form__container {
+  background-color: black;
+    padding-top: 78px;
+  padding-bottom: 146px;
+
+}
+.form__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
 }
 </style>

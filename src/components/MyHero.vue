@@ -8,7 +8,7 @@
         <p class="hero__info__last">Ретуш</p>
       </div>
       <my-button type="button" class="hero__button" @click="showDialog">
-        Замовити послугу
+        Замовити
       </my-button>
       <my-dialog v-model:show="dialogVisible" class="hero__dialog">
         <OrderAService @submit="closeDialog">
@@ -58,8 +58,8 @@ export default {
 
 <style scoped>
 .hero {
-  padding-top: 30px;
-  height: 400px;
+  padding-top: 60px;
+  height: 640px;
   margin-left: auto;
   margin-right: auto;
   background-image: url("../imeges/heroyLviv2.svg");
@@ -78,24 +78,28 @@ export default {
   margin-top: 0;
   margin-bottom: 0;
 
-  font-weight: 900;
   font-size: 35px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+
   color: black;
 }
 
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-size: 40px;
-    font-size: 60px;
+    font-size: 100px;
   }
 }
 .hero__button {
   font-size: 25px;
   margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .hero__button {
+    font-size: 24px;
+    margin-top: 56px;
+  }
 }
 .hero__info {
   display: flex;
@@ -106,7 +110,8 @@ export default {
 }
 @media screen and (min-width: 768px) {
   .hero__info {
-    font-size: 40px;
+    font-size: 24px;
+    font-weight: bold;
   }
 }
 

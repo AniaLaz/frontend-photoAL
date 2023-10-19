@@ -7,6 +7,7 @@
       alt="Ania Lazarenko"
       @click="$router.push('/')"
     />
+    <p class="logo__name">Анна Лазаренко</p>
     <div class="navbar__btns">
       <a class="navbar__btn" @click="$router.push('/post')">Пости</a>
       <a class="navbar__btn left" @click="$router.push('/about')">Про мене</a>
@@ -39,7 +40,7 @@ export default {};
 }
 @media screen and (min-width: 768px) {
   .navbar__btn {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -52,12 +53,12 @@ export default {};
   top: -0.5em;
   left: 0;
   right: 0;
-  transform: scale(0,1);
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(0, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-  .navbar__btn:hover::before {
-  transform: scale(1,1);
-  }
+.navbar__btn:hover::before {
+  transform: scale(1, 1);
+}
 .left {
   margin-left: 5px;
 }
@@ -69,6 +70,8 @@ export default {};
 .logo {
   cursor: pointer;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 62px;
+  margin-right: 18px;
 }
 .logo:hover {
   transform: translate(2px, 5%);
