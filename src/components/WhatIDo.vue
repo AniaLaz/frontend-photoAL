@@ -89,8 +89,8 @@ ul {
 @media screen and (min-width: 768px) {
   .doing__list {
     display: flex;
-    margin-top: 20px;
     flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
@@ -105,8 +105,8 @@ ul {
 @media screen and (min-width: 768px) {
   .doing__item {
     position: relative;
-    width: calc(100% / 2);
-    margin-bottom: 78px;
+    width: calc(100% / 3 - 13.5px);
+
   }
 }
 @media screen and (min-width: 1200px) {
@@ -123,11 +123,11 @@ ul {
   display: flex;
   text-align: left;
   align-items: center;
-  width: calc(100% - 57px);
+  width: calc(100% - 56px);
   border: 0;
   color: white;
   background: rgba(60, 149, 143, 0.8);
-  height: 164px;
+  height: 64px;
   padding: 34px 0 34px 0;
   padding-left: 57px;
 }
