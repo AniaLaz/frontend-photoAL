@@ -59,7 +59,7 @@ export default {
 <style scoped>
 .hero {
   padding-top: 60px;
-  height: 640px;
+  height: 840px;
   margin-left: auto;
   margin-right: auto;
   background-image: url("../imeges/heroyLviv2.svg");

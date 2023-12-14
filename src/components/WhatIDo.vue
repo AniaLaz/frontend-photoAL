@@ -2,77 +2,93 @@
   <div class="doing">
     <ul class="doing__list list">
       <li class="doing__item">
-        <img
-          class="doing__img"
-          src="../imeges/children1.jpg"
-          alt="дитина"
-          width="371"
-        />
-        <p class="doing__img__title">
-          <span class="doing__title__span">Дитяча фотографія</span>
-        </p>
+        <a class="doing__button" @click="$router.push('/category')" data-id="children" >
+          <img
+            class="doing__img"
+            src="../imeges/children1.jpg"
+            alt="дитина"
+            width="371"
+          />
+
+          <p class="doing__img__title">
+            <span class="doing__title__span">Дитяча фотографія</span>
+          </p>
+        </a>
       </li>
       <li class="doing__item">
-        <img
-          class="doing__img"
-          src="../imeges/femily.jpg"
-          alt="сім'я"
-          width="371"
-        />
-        <p class="doing__img__title">
-          <span class="doing__title__span">Сімейна зйомка</span>
-        </p>
+        <a class="doing__button">
+          <img
+            class="doing__img"
+            src="../imeges/femily.jpg"
+            alt="сім'я"
+            width="371"
+          />
+
+          <p class="doing__img__title">
+            <span class="doing__title__span">Сімейна зйомка</span>
+          </p>
+        </a>
       </li>
       <li class="doing__item">
-        <img
-          class="doing__img"
-          src="../imeges/love-story.jpg"
-          alt="закохані"
-          width="371"
-        />
-        <p class="doing__img__title" lang="en">
-          <span class="doing__title__span">love story</span>
-        </p>
+        <a class="doing__button">
+          <img
+            class="doing__img"
+            src="../imeges/love-story.jpg"
+            alt="закохані"
+            width="371"
+          />
+          <p class="doing__img__title" lang="en">
+            <span class="doing__title__span">love story</span>
+          </p>
+        </a>
       </li>
       <li class="doing__item">
-        <img
-          class="doing__img"
-          src="../imeges/clas.jpg"
-          alt="однокласники"
-          width="371"
-        />
-        <p class="doing__img__title">
-          <span class="doing__title__span">Шкільна фотосесія</span>
-        </p>
+        <a class="doing__button">
+          <img
+            class="doing__img"
+            src="../imeges/clas.jpg"
+            alt="однокласники"
+            width="371"
+          />
+          <p class="doing__img__title">
+            <span class="doing__title__span">Шкільна фотосесія</span>
+          </p>
+        </a>
       </li>
       <li class="doing__item">
-        <img
-          class="doing__img"
-          src="../imeges/christening.jpg"
-          alt="хрещення дитини"
-          width="371"
-        />
-        <p class="doing__img__title">
-          <span class="doing__title__span">Хрестини</span>
-        </p>
+        <a class="doing__button">
+          <img
+            class="doing__img"
+            src="../imeges/christening.jpg"
+            alt="хрещення дитини"
+            width="371"
+          />
+          <p class="doing__img__title">
+            <span class="doing__title__span">Хрестини</span>
+          </p>
+        </a>
       </li>
       <li class="doing__item">
-        <img
-          class="doing__img"
-          src="../imeges/albom.jpg"
-          alt="фото-альбоми"
-          width="371"
-        />
-        <p class="doing__img__title">
-          <span class="doing__title__span">Фотоальбоми</span>
-        </p>
+        <a class="doing__button">
+          <img
+            class="doing__img"
+            src="../imeges/albom.jpg"
+            alt="фото-альбоми"
+            width="371"
+          />
+          <p class="doing__img__title">
+            <span class="doing__title__span">Фотоальбоми</span>
+          </p>
+        </a>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+
+};
 </script>
 
 <style scoped>
@@ -82,6 +98,9 @@ ul {
   margin-block-end: 0;
 }
 
+.doing__button {
+  cursor: pointer;
+}
 .list {
   list-style: none;
 }
@@ -106,7 +125,6 @@ ul {
   .doing__item {
     position: relative;
     width: calc(100% / 3 - 13.5px);
-
   }
 }
 @media screen and (min-width: 1200px) {
